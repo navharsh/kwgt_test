@@ -30,5 +30,17 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <provider
+                android:name="org.kustom.api.Provider"
+                android:authorities="${applicationId}.kustom.provider"
+                android:exported="true"
+                tools:ignore="ExportedContentProvider">
+            <intent-filter>
+                <!-- <action android:name="org.kustom.provider.WALLPAPERS"/> -->
+                <action android:name="org.kustom.provider.WIDGETS"/>
+                <!-- <action android:name="org.kustom.provider.KOMPONENTS"/> -->
+                <!-- <action android:name="org.kustom.provider.LOCKSCREENS"/> -->
+            </intent-filter>
+        </provider>
     </application>
 </manifest>
