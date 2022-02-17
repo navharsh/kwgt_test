@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.kwgt_test">
+    package="dev.dhanraj.kwgt.test.dashboard">
    <application
         android:label="test for KWGT"
         android:name="${applicationName}"

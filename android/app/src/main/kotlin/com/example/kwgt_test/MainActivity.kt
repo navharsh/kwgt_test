@@ -1,4 +1,4 @@
-package com.example.kwgt_test
+package dev.dhanraj.kwgt.test.dashboard
 
 import io.flutter.embedding.android.FlutterActivity
 
