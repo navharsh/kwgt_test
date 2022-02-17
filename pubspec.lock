@@ -69,6 +69,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  flutter_play_asset_delivery:
+    dependency: "direct dev"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "6fd680b21f2dc970f1932142b7793d2ba365d1a6"
+      url: "https://github.com/Not-Dhanraj/flutter_play_asset_delivery.git"
+    source: git
+    version: "0.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -172,3 +181,4 @@ packages:
     version: "2.1.1"
 sdks:
   dart: ">=2.16.1 <3.0.0"
+  flutter: ">=1.20.0"
