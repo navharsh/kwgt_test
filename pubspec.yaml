@@ -54,7 +54,7 @@ flutter:
   deferred-components:
     - name: widgetComponent
       assets:
-        - android/app/src/main/assets/widgets/
+        - android/app/src/main/widgets/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
