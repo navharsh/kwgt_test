@@ -1,5 +1,4 @@
 include ':app'
-include ':app_asset_pack'
 
 def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()
