@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,13 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  String _counter = '';
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +53,17 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          const platform = MethodChannel('dev.dhanraj.kwgt.test.dashboard');
+          platform.invokeMethod('download_asset_pack', {
+            "asset_name": 'widget_pack',
+          }).then((value) {
+            setState(() {
+              _counter = value.toString();
+            });
+            debugPrint(value);
+          });
+        },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
