@@ -34,13 +34,14 @@ xmlns:tools="http://schemas.android.com/tools"
         <provider
                 android:name="org.kustom.api.Provider"
                 android:authorities="${applicationId}.kustom.provider"
+                android:enabled="false"
                 android:exported="true"
                 tools:ignore="ExportedContentProvider">
             <intent-filter>
                 <!-- <action android:name="org.kustom.provider.WALLPAPERS"/> -->
                 <action android:name="org.kustom.provider.WIDGETS"/>
-                <!-- <action android:name="org.kustom.provider.KOMPONENTS"/> -->
-                <!-- <action android:name="org.kustom.provider.LOCKSCREENS"/> -->
+                <action android:name="org.kustom.provider.KOMPONENTS"/>
+                <action android:name="org.kustom.provider.LOCKSCREENS"/>
             </intent-filter>
         </provider>
     </application>
