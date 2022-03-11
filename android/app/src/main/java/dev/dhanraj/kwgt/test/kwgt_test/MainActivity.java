@@ -19,7 +19,7 @@ public class MainActivity extends FlutterActivity {
             // Note: this method is invoked on the main thread.
             if (call.method.equals("enable")) {
               ContextWrapper aContext = new ContextWrapper(getApplicationContext());
-              aContext.getPackageManager().setComponentEnabledSetting(new android.content.ComponentName(aContext, "org.kustom.api.Provider"), android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 1);
+              aContext.getPackageManager().setComponentEnabledSetting(new android.content.ComponentName(aContext, "org.kustom.api.Provider"), android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 1);
               result.success(null);
               Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
             } else{
