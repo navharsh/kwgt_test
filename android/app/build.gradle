@@ -65,5 +65,5 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'org.bitbucket.frankmonza:kustomapi:+'
+    implementation 'com.github.Not-Dhanraj.KustomAPI:api:0.0.2'
 }
